@@ -1,6 +1,6 @@
-.PHONY: dwm dmenu st
+.PHONY: dwm dmenu st slstatus
 
-all: dwm dmenu st
+all: dwm dmenu st slstatus
 
 deps:
 	# dwm
@@ -17,3 +17,7 @@ dmenu:
 st:
 	[[ -e st ]] || git clone git@github.com:aweeraman/st.git
 	cd st && make && sudo make install
+
+slstatus:
+	[[ -e slstatus ]] || git clone git@github.com:aweeraman/slstatus.git
+	cd slstatus && make && sudo make install
