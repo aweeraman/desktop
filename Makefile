@@ -1,23 +1,11 @@
-.PHONY: dwm dmenu st slstatus
+.PHONY: all
 
-all: dwm dmenu st slstatus
+all: sl-dwm sl-dmenu sl-st sl-slstatus
 
 deps:
 	# dwm
 	sudo apt-get install libxft-dev libxinerama-dev
 
-dwm:
-	[[ -e dwm ]] || git clone git@github.com:aweeraman/dwm.git
-	cd dwm && make && sudo make install
-
-dmenu:
-	[[ -e dmenu ]] || git clone git@github.com:aweeraman/dmenu.git
-	cd dmenu && make && sudo make install
-
-st:
-	[[ -e st ]] || git clone git@github.com:aweeraman/st.git
-	cd st && make && sudo make install
-
-slstatus:
-	[[ -e slstatus ]] || git clone git@github.com:aweeraman/slstatus.git
-	cd slstatus && make && sudo make install
+sl-%:
+	[[ -e $* ]] || git clone git@github.com:aweeraman/$*.git
+	cd $* && make && sudo make install
