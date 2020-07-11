@@ -6,7 +6,7 @@ xrandr --dpi 96
 
 feh --bg-scale ~/Pictures/background.jpg &
 
-xcompmgr -CcfF -I-.001 -O-.001 -D6 -t-1 -l-3 -r4.2 -o.5 &
+xcompmgr -CcfF -D6 -t-1 -l-3 -r4.2 -o.5 &
 
 slstatus &
 
