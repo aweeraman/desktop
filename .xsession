@@ -8,6 +8,6 @@ xsetbg ~/Pictures/background.jpg
 
 slstatus &
 
-redshift &
+redshift -t 6500:3500 &
 
 dwm
