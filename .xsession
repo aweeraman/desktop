@@ -4,7 +4,9 @@ xrandr --output eDP-1-1 --mode 1920x1080 --rate 144
 xrandr --output HDMI-0 --above eDP-1-1
 xrandr --dpi 96
 
-xsetbg ~/Pictures/background.jpg
+feh --bg-scale ~/Pictures/background.jpg &
+
+xcompmgr -CcfF -I-.001 -O-.001 -D6 -t-1 -l-3 -r4.2 -o.5 &
 
 slstatus &
 
