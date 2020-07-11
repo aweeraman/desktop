@@ -1,4 +1,5 @@
-dwm
-dmenu
-st
-slstatus
+dwm/
+dmenu/
+st/
+slstatus/
+slock/
