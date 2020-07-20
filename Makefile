@@ -1,6 +1,12 @@
-.PHONY: all
+.PHONY: all zathura ranger
 
-all: sl-dwm sl-dmenu sl-st sl-slstatus sl-slock
+all: sl-dwm sl-dmenu sl-st sl-slstatus sl-slock zathura ranger
+
+zathura:
+	sudo apt-get install zathura
+
+ranger:
+	sudo apt-get install ranger
 
 deps:
 	# dwm
