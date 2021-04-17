@@ -15,5 +15,5 @@ deps:
 	sudo apt-get install libpam0g-dev
 
 sl-%:
-	[[ -e $* ]] || git clone git@github.com:aweeraman/$*.git
+	[ -e $* ] || git clone git@github.com:aweeraman/$*.git
 	cd $* && make && sudo make install
